@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BOBOS | Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="app-body">
+
+    <!-- TOP NAVIGATION -->
+    <header class="appbar">
+
+        <a class="logo" href="dashboard.html">
+            <span class="logo-mark">B</span>
+            BOBOS
+        </a>
+
+        <nav>
+            <a class="active" href="dashboard.html">Dashboard</a>
+            <a href="notes.html">Notes</a>
+            <a href="websites.html">Websites</a>
+            <a href="developer.html">Developer</a>
+            <a href="ai.html">AI</a>
+        </nav>
+
+        <button class="ghost-button" onclick="logout()">
+            Sign out
+        </button>
+
+    </header>
+
+
+    <!-- MAIN DASHBOARD -->
+    <main class="container">
+
+        <!-- WELCOME -->
+        <section class="welcome">
+
+            <div>
+                <span class="eyebrow">YOUR WORKSPACE</span>
+
+                <h1>
+                    Welcome back,
+                    <span id="userName">Builder</span>.
+                </h1>
+
+                <p>
+                    Everything you need to turn an idea into a real project.
+                </p>
+            </div>
+
+            <button
+                class="primary-button"
+                onclick="location.href='ai.html'">
+
+                ✦ Ask BOBOS AI
+
+            </button>
+
+        </section>
+
+
+        <!-- MAIN TOOLS -->
+        <section class="dashboard-grid">
+
+            <!-- NOTES -->
+            <a class="tool-card" href="notes.html">
+
+                <div class="tool-icon">
+                    📝
+                </div>
+
+                <h2>
+                    Notes
+                </h2>
+
+                <p>
+                    Capture ideas, plans and important information.
+                </p>
+
+                <span>
+                    Open Notes →
+                </span>
+
+            </a>
+
+
+            <!-- WEBSITE BUILDER -->
+            <a class="tool-card" href="websites.html">
+
+                <div class="tool-icon">
+                    🌐
+                </div>
+
+                <h2>
+                    Websites
+                </h2>
+
+                <p>
+                    Build HTML, CSS and JavaScript websites with a live preview.
+                </p>
+
+                <span>
+                    Open Builder →
+                </span>
+
+            </a>
+
+
+            <!-- DEVELOPMENT -->
+            <a class="tool-card" href="developer.html">
+
+                <div class="tool-icon">
+                    💻
+                </div>
+
+                <h2>
+                    Development
+                </h2>
+
+                <p>
+                    Create files and organize your development projects.
+                </p>
+
+                <span>
+                    Open Studio →
+                </span>
+
+            </a>
+
+
+            <!-- AI -->
+            <a class="tool-card ai-card" href="ai.html">
+
+                <div class="tool-icon">
+                    🤖
+                </div>
+
+                <h2>
+                    BOBOS AI
+                </h2>
+
+                <p>
+                    Get coding help, project ideas and AI-powered suggestions.
+                </p>
+
+                <span>
+                    Open AI →
+                </span>
+
+            </a>
+
+        </section>
+
+
+        <!-- RECENT WORK -->
+        <section class="panel">
+
+            <div class="panel-heading">
+
+                <div>
+
+                    <span class="eyebrow">
+                        RECENT
+                    </span>
+
+                    <h2>
+                        Your saved work
+                    </h2>
+
+                </div>
+
+            </div>
+
+            <div
+                id="recentWork"
+                class="recent-list">
+
+                <!-- JavaScript will put saved projects here -->
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- DASHBOARD JAVASCRIPT -->
+    <script src="js/dashboard.js"></script>
+
+</body>
+</html>
