@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BOBOS | AI</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="app-body">
+
+    <!-- NAVIGATION -->
+    <header class="appbar">
+
+        <a class="logo" href="dashboard.html">
+            <span class="logo-mark">B</span>
+            BOBOS
+        </a>
+
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="notes.html">Notes</a>
+            <a href="websites.html">Websites</a>
+            <a href="developer.html">Developer</a>
+            <a class="active" href="ai.html">AI</a>
+        </nav>
+
+    </header>
+
+
+    <!-- MAIN -->
+    <main class="container ai-page">
+
+
+        <!-- AI HERO -->
+        <section class="ai-hero">
+
+            <div class="ai-orb">
+                ✦
+            </div>
+
+            <span class="eyebrow">
+                BOBOS AI
+            </span>
+
+            <h1>
+                Your development assistant.
+            </h1>
+
+            <p>
+                Ask questions, plan projects, get coding help,
+                and turn ideas into applications.
+            </p>
+
+        </section>
+
+
+        <!-- CHAT -->
+        <section class="chat panel">
+
+
+            <!-- MESSAGES -->
+            <div
+                id="messages"
+                class="messages">
+
+                <div class="message ai-message">
+
+                    <b>
+                        BOBOS AI
+                    </b>
+
+                    <p>
+                        Hi! I'm BOBOS AI. Tell me what you want to
+                        build, learn, or improve.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- QUICK ACTIONS -->
+            <div class="suggestions">
+
+                <button
+                    onclick="ask('Make a simple calculator app')">
+
+                    🧮 Calculator
+
+                </button>
+
+                <button
+                    onclick="ask('Give me website ideas')">
+
+                    🌐 Website Ideas
+
+                </button>
+
+                <button
+                    onclick="ask('Explain JavaScript')">
+
+                    💻 Explain JavaScript
+
+                </button>
+
+                <button
+                    onclick="ask('Help me make an application')">
+
+                    🚀 Make an App
+
+                </button>
+
+            </div>
+
+
+            <!-- INPUT -->
+            <form id="aiForm">
+
+                <input
+                    id="aiInput"
+                    type="text"
+                    placeholder="Ask BOBOS AI anything..."
+                    autocomplete="off">
+
+
+                <button
+                    class="primary-button"
+                    type="submit">
+
+                    Send →
+
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- AI JAVASCRIPT -->
+    <script src="js/ai.js"></script>
+
+</body>
+
+</html>
