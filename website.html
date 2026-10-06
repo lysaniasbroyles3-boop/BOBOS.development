@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BOBOS | Website Builder</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="app-body">
+
+    <!-- NAVIGATION -->
+    <header class="appbar">
+
+        <a class="logo" href="dashboard.html">
+            <span class="logo-mark">B</span>
+            BOBOS
+        </a>
+
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="notes.html">Notes</a>
+            <a class="active" href="websites.html">Websites</a>
+            <a href="developer.html">Developer</a>
+            <a href="ai.html">AI</a>
+        </nav>
+
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="container wide">
+
+        <!-- PAGE HEADER -->
+        <section class="page-head">
+
+            <div>
+
+                <span class="eyebrow">
+                    CREATE
+                </span>
+
+                <h1>
+                    Website Builder
+                </h1>
+
+                <p>
+                    Build a website with HTML, CSS and JavaScript.
+                </p>
+
+            </div>
+
+            <button
+                class="primary-button"
+                onclick="saveSite()">
+
+                💾 Save Project
+
+            </button>
+
+        </section>
+
+
+        <!-- WEBSITE BUILDER -->
+        <div class="builder">
+
+
+            <!-- CODE EDITOR -->
+            <section class="code-panel">
+
+                <div class="tabs">
+
+                    <button
+                        class="tab active"
+                        data-file="html">
+
+                        index.html
+
+                    </button>
+
+                    <button
+                        class="tab"
+                        data-file="css">
+
+                        style.css
+
+                    </button>
+
+                    <button
+                        class="tab"
+                        data-file="js">
+
+                        script.js
+
+                    </button>
+
+                </div>
+
+
+                <textarea
+                    id="codeEditor"
+                    spellcheck="false"
+                    placeholder="Write your code here..."></textarea>
+
+            </section>
+
+
+            <!-- LIVE PREVIEW -->
+            <section class="preview-panel">
+
+                <div class="preview-header">
+
+                    <span>
+                        LIVE PREVIEW
+                    </span>
+
+                    <button
+                        class="secondary-button small"
+                        onclick="refreshPreview()">
+
+                        ↻ Refresh
+
+                    </button>
+
+                </div>
+
+
+                <iframe
+                    id="preview"
+                    title="BOBOS Website Preview">
+                </iframe>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- WEBSITE BUILDER JAVASCRIPT -->
+    <script src="js/websites.js"></script>
+
+</body>
+
+</html>
