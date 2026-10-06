@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BOBOS | Notes</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="app-body">
+
+    <!-- NAVIGATION -->
+    <header class="appbar">
+
+        <a class="logo" href="dashboard.html">
+            <span class="logo-mark">B</span>
+            BOBOS
+        </a>
+
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a class="active" href="notes.html">Notes</a>
+            <a href="websites.html">Websites</a>
+            <a href="developer.html">Developer</a>
+            <a href="ai.html">AI</a>
+        </nav>
+
+    </header>
+
+
+    <!-- PAGE -->
+    <main class="container">
+
+        <!-- HEADER -->
+        <section class="page-head">
+
+            <div>
+
+                <span class="eyebrow">
+                    WORKSPACE
+                </span>
+
+                <h1>
+                    Notes
+                </h1>
+
+                <p>
+                    Save ideas, plans, reminders and project information.
+                </p>
+
+            </div>
+
+            <button
+                class="primary-button"
+                onclick="newNote()">
+
+                ＋ New Note
+
+            </button>
+
+        </section>
+
+
+        <!-- NOTES AREA -->
+        <section class="notes-layout">
+
+
+            <!-- NOTE LIST -->
+            <aside class="panel note-list">
+
+                <div id="noteList">
+
+                    <!-- JavaScript puts notes here -->
+
+                </div>
+
+            </aside>
+
+
+            <!-- NOTE EDITOR -->
+            <section class="panel editor">
+
+                <input
+                    id="noteTitle"
+                    class="title-input"
+                    type="text"
+                    placeholder="Note title">
+
+
+                <textarea
+                    id="noteBody"
+                    placeholder="Start writing your note..."></textarea>
+
+
+                <!-- BUTTONS -->
+                <div class="editor-actions">
+
+                    <button
+                        class="secondary-button"
+                        onclick="deleteNote()">
+
+                        Delete
+
+                    </button>
+
+
+                    <button
+                        class="primary-button"
+                        onclick="saveNote()">
+
+                        Save Note
+
+                    </button>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <!-- NOTES JAVASCRIPT -->
+    <script src="js/notes.js"></script>
+
+</body>
+
+</html>
