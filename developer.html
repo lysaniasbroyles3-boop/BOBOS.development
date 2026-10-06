@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BOBOS | Developer Studio</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="app-body">
+
+    <!-- NAVIGATION -->
+    <header class="appbar">
+
+        <a class="logo" href="dashboard.html">
+            <span class="logo-mark">B</span>
+            BOBOS
+        </a>
+
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="notes.html">Notes</a>
+            <a href="websites.html">Websites</a>
+            <a class="active" href="developer.html">Developer</a>
+            <a href="ai.html">AI</a>
+        </nav>
+
+    </header>
+
+
+    <!-- MAIN -->
+    <main class="container">
+
+        <!-- HEADER -->
+        <section class="page-head">
+
+            <div>
+
+                <span class="eyebrow">
+                    DEVELOPMENT STUDIO
+                </span>
+
+                <h1>
+                    Build your project.
+                </h1>
+
+                <p>
+                    Create files, edit code and organize your development projects.
+                </p>
+
+            </div>
+
+
+            <button
+                class="primary-button"
+                onclick="newProject()">
+
+                ＋ New File
+
+            </button>
+
+        </section>
+
+
+        <!-- DEVELOPMENT WORKSPACE -->
+        <section class="dev-layout">
+
+
+            <!-- FILE EXPLORER -->
+            <aside class="panel file-tree">
+
+                <h3>
+                    PROJECT FILES
+                </h3>
+
+                <div id="files">
+
+                    <!-- Files will appear here -->
+
+                </div>
+
+            </aside>
+
+
+            <!-- CODE EDITOR -->
+            <section class="panel dev-editor">
+
+
+                <!-- EDITOR TOP BAR -->
+                <div class="editor-top">
+
+                    <input
+                        id="fileName"
+                        type="text"
+                        value="main.js"
+                        aria-label="File name">
+
+
+                    <button
+                        class="secondary-button"
+                        onclick="saveFile()">
+
+                        💾 Save
+
+                    </button>
+
+                </div>
+
+
+                <!-- CODE -->
+                <textarea
+                    id="devCode"
+                    spellcheck="false">// Welcome to BOBOS Development Studio
+
+console.log("Hello from BOBOS!");</textarea>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <!-- DEVELOPER JAVASCRIPT -->
+    <script src="js/developer.js"></script>
+
+</body>
+
+</html>
